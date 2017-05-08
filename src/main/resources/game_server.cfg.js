@@ -37,7 +37,7 @@ config.rpcTimeOut=0;
 config.rpcFutureDeleteTimeOut=60*1000;
 /**message**/
 config.netMessageHandlerNameSpace="com.snowcattle.game.wolfshoot.message.handler.impl";
-config.netMsgNameSpace="com.snowcattle.game.message.wolfshoot.logic";
+config.netMsgNameSpace="com.snowcattle.game.wolfshoot.message.logic";
 /**异步线程池配置**/
 config.asyncThreadPoolCoreSize=1;
 config.asyncThreadPoolMaxSize=100;
