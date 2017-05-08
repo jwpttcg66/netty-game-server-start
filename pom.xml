@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.snowcattle.game</groupId>
+    <artifactId>netty-game-server-start</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <slf4j-log4j12.version>1.7.12</slf4j-log4j12.version>
+        <junit.version>4.12</junit.version>
+        <app.encoding>UTF-8</app.encoding>
+        <maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
+        <version.template.file>version.txt.template</version.template.file>
+        <version.file>version.txt</version.file>
+        <spring.version>4.3.2.RELEASE</spring.version>
+
+        <project.build.directory>target</project.build.directory>
+        <project.build.resource.directory>target/resource</project.build.resource.directory>
+
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.github.jwpttcg66</groupId>
+            <artifactId>NettyGameServer</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <generatedSourcesDirectory>${project.build.directory}</generatedSourcesDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- -->
+    <!--&lt;!&ndash;                       build-package                               &ndash;&gt;-->
+    <!--<build>-->
+
+    <!--<directory>${project.build.directory}</directory>-->
+    <!--&lt;!&ndash; 过滤配置文件 &ndash;&gt;-->
+    <!--&lt;!&ndash;<resources>&ndash;&gt;-->
+    <!--&lt;!&ndash;<resource>&ndash;&gt;-->
+    <!--&lt;!&ndash;<directory>src/main/resources</directory>&ndash;&gt;-->
+    <!--&lt;!&ndash;<excludes>&ndash;&gt;-->
+    <!--&lt;!&ndash;<exclude>**/*</exclude>&ndash;&gt;-->
+    <!--&lt;!&ndash;</excludes>&ndash;&gt;-->
+    <!--&lt;!&ndash;<filtering>true</filtering>&ndash;&gt;-->
+    <!--&lt;!&ndash;</resource>&ndash;&gt;-->
+    <!--&lt;!&ndash;</resources>&ndash;&gt;-->
+
+    <!--<plugins>-->
+    <!--<plugin>-->
+    <!--<groupId>org.apache.maven.plugins</groupId>-->
+    <!--<artifactId>maven-compiler-plugin</artifactId>-->
+    <!--<version>3.1</version>-->
+    <!--<configuration>-->
+    <!--<source>1.7</source>-->
+    <!--<target>1.7</target>-->
+    <!--<encoding>${project.build.sourceEncoding}</encoding>-->
+    <!--<generatedSourcesDirectory>${project.build.directory}</generatedSourcesDirectory>-->
+    <!--</configuration>-->
+    <!--</plugin>-->
+
+    <!--<plugin>-->
+    <!--<groupId>org.apache.maven.plugins</groupId>-->
+    <!--<artifactId>maven-jar-plugin</artifactId>-->
+    <!--<version>2.4</version>-->
+    <!--<configuration>-->
+    <!--<outputDirectory>${project.build.directory}/lib/</outputDirectory>-->
+    <!--<archive>-->
+    <!--<manifest>-->
+    <!--<addClasspath>true</addClasspath>-->
+    <!--<classpathPrefix>lib/</classpathPrefix>-->
+    <!--<mainClass>com.wolf.shoot.bootstrap.GameServer</mainClass>-->
+    <!--</manifest>-->
+    <!--</archive>-->
+    <!--</configuration>-->
+    <!--</plugin>-->
+
+    <!--<plugin>-->
+    <!--<groupId>org.apache.maven.plugins</groupId>-->
+    <!--<artifactId>maven-dependency-plugin</artifactId>-->
+    <!--<version>2.10</version>-->
+    <!--<executions>-->
+    <!--<execution>-->
+    <!--<id>copy-dependencies</id>-->
+    <!--<phase>package</phase>-->
+    <!--<goals>-->
+    <!--<goal>copy-dependencies</goal>-->
+    <!--</goals>-->
+    <!--<configuration>-->
+    <!--<outputDirectory>${project.build.directory}/lib</outputDirectory>-->
+    <!--</configuration>-->
+    <!--</execution>-->
+    <!--</executions>-->
+    <!--</plugin>-->
+    <!--<plugin>-->
+    <!--<groupId>org.apache.maven.plugins</groupId>-->
+    <!--<artifactId>maven-resources-plugin</artifactId>-->
+    <!--<executions>-->
+    <!--<execution>-->
+    <!--<id>copy-resources</id>-->
+    <!--<phase>package</phase>-->
+    <!--<goals>-->
+    <!--<goal>copy-resources</goal>-->
+    <!--</goals>-->
+    <!--<configuration>-->
+    <!--<encoding>UTF-8</encoding>-->
+    <!--<outputDirectory>-->
+    <!--${project.build.resource.directory}-->
+    <!--</outputDirectory>   &lt;!&ndash; 表示把配置文件拷到和jar包同一个路径下 &ndash;&gt;-->
+    <!--<resources>-->
+    <!--<resource>-->
+    <!--<directory>src/main/resources/</directory>-->
+    <!--</resource>-->
+    <!--</resources>-->
+    <!--</configuration>-->
+    <!--</execution>-->
+    <!--</executions>-->
+    <!--</plugin>-->
+    <!--</plugins>-->
+    <!--</build>-->
+
+</project>
