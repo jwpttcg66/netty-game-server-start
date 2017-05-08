@@ -32,6 +32,14 @@
 
     <dependencies>
 
+        <!-- test -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
         <dependency>
             <groupId>com.github.jwpttcg66</groupId>
             <artifactId>NettyGameServer</artifactId>
