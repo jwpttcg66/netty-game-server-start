@@ -1,0 +1,10 @@
+option java_package = "com.snowcattle.game.wolfshoot.message.auto.tcp.online.server";
+option java_outer_classname = "GameOnlineTCPServerProBuf";
+
+message OnlineHeartTCPServerProBuf
+{
+    required int64 playerId = 1;
+    required int32 tocken = 2;
+}
+
+

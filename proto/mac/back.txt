@@ -1,0 +1,2 @@
+sudo protoc -I=/Users/jiangwenping/data/github-idea-workspace//netty-game-server-start/proto/ --java_out=/Users/jiangwenping/data/github-idea-workspace//netty-game-server-start/src/main/java /Users/jiangwenping/data/github-idea-workspace//netty-game-server-start/proto/common.proto
+sudo protoc -I=/Users/jiangwenping/data/github-idea-workspace//netty-game-server-start/proto/ --java_out=/Users/jiangwenping/data/github-idea-workspace//netty-game-server-start/src/main/java /Users/jiangwenping/data/github-idea-workspace//netty-game-server-start/proto/*.proto

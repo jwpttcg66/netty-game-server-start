@@ -1,0 +1,8 @@
+option java_package = "com.snowcattle.game.wolfshoot.message.auto.udp.online";
+option java_outer_classname = "GameOnlineUDPProBuf";
+
+message OnlineHeartUDPProBuf
+{
+    required int32 id = 1;
+}
+
