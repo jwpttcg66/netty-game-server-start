@@ -16,10 +16,6 @@ public class OnlineLoginServerTcpMessage extends AbstractNetProtoBufTcpMessage {
     private long playerId;
     private int tocken;
 
-    public OnlineLoginServerTcpMessage() {
-        setCmd(GameMessageCommandIndex.ONLINE_LOGIN_TCP_SERVER_MESSAGE);
-    }
-
     @Override
     public void decoderNetProtoBufMessageBody() throws CodecException, Exception {
 
