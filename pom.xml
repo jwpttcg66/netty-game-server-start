@@ -43,7 +43,7 @@
         <dependency>
             <groupId>com.github.jwpttcg66</groupId>
             <artifactId>NettyGameServer</artifactId>
-            <version>1.1.1</version>
+            <version>1.1.2</version>
         </dependency>
 
     </dependencies>
