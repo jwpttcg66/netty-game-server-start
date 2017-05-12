@@ -25,6 +25,12 @@
         <version.file>version.txt</version.file>
         <spring.version>4.3.2.RELEASE</spring.version>
 
+        <redis-game-transaction.version>1.8.010</redis-game-transaction.version>
+        <GameShardingDb.version>1.2.004</GameShardingDb.version>
+        <GameThreadPool.version>1.1.1</GameThreadPool.version>
+        <game-executor.version>1.7.3</game-executor.version>
+        <game-expression.version>1.1</game-expression.version>
+
         <project.build.directory>target</project.build.directory>
         <project.build.resource.directory>target/resource</project.build.resource.directory>
 
@@ -44,6 +50,37 @@
             <groupId>com.github.jwpttcg66</groupId>
             <artifactId>NettyGameServer</artifactId>
             <version>1.1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.jwpttcg66</groupId>
+            <artifactId>redis-game-transaction</artifactId>
+            <version>${redis-game-transaction.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.jwpttcg66</groupId>
+            <artifactId>GameShardingDb</artifactId>
+            <version>${GameShardingDb.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.jwpttcg66</groupId>
+            <artifactId>GameThreadPool</artifactId>
+            <version>${GameThreadPool.version}</version>
+        </dependency>
+
+        <!-- game-excutor -->
+        <dependency>
+            <groupId>com.github.jwpttcg66</groupId>
+            <artifactId>game-executor</artifactId>
+            <version>${game-executor.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.jwpttcg66</groupId>
+            <artifactId>game-expression</artifactId>
+            <version>${game-expression.version}</version>
         </dependency>
 
     </dependencies>
