@@ -1,6 +1,7 @@
 {
     "package" : "com.snowcattle.game.wolfshoot.service.dict.entity",
     "dict" : [
-        ["EXAMPLE", "dict/d_example.wg", "DictExample"]
+        ["BULLET_BULLET", "dict/bullet/d_bullet.wg", "Bullet"],
+        ["STATUS_ROLE_SKILL", "dict/status/d_role_skill.wg", "RoleSkill"],
     ]
 }
